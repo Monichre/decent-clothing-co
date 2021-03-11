@@ -1,7 +1,3 @@
-import type { Wishlist as BCWishlist } from '../bigcommerce/api/wishlist'
-import type { Customer as BCCustomer } from '../bigcommerce/api/customers'
-import type { SearchProductsData as BCSearchProductsData } from '../bigcommerce/api/catalog/products'
-
 export type Discount = {
   // The value of the discount, can be an amount or percentage
   value: number
@@ -90,15 +86,6 @@ export type Cart = {
   // Discounts that have been applied on the cart.
   discounts?: Discount[]
 }
-
-// TODO: Properly define this type
-export interface Wishlist extends BCWishlist {}
-
-// TODO: Properly define this type
-export interface Customer extends BCCustomer {}
-
-// TODO: Properly define this type
-export interface SearchProductsData extends BCSearchProductsData {}
 
 /**
  * Cart mutations

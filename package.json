@@ -8,8 +8,7 @@
     "analyze": "BUNDLE_ANALYZE=both yarn build",
     "prettier-fix": "prettier --write .",
     "find:unused": "next-unused",
-    "generate": "graphql-codegen",
-    "generate:definitions": "node framework/bigcommerce/scripts/generate-definitions.js"
+    "generate": "graphql-codegen"
   },
   "sideEffects": false,
   "license": "MIT",
