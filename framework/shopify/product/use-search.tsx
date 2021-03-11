@@ -34,6 +34,8 @@ export const handler: SWRHook<
     query: getAllProductsQuery,
   },
   async fetcher({ input, options, fetch }) {
+    console.log('input: ', input)
+    console.log('options: ', options)
     const { categoryId, brandId } = input
 
     const data = await fetch({
@@ -41,8 +43,10 @@ export const handler: SWRHook<
       method: options?.method,
       variables: getSearchVariables(input),
     })
+    console.log('data: ', data)
 
     let edges
+    console.log('edges: ', edges)
 
     if (categoryId) {
       edges = data.node?.products?.edges ?? []

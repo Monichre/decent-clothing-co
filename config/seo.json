@@ -1,9 +1,9 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
+  "title": "DeCent Clothing Co Storefront | Powered by Next.js Commerce",
+  "titleTemplate": "%s - DeCent Clothing Co Storefront",
   "description": "Next.js Commerce - https://www.nextjs.org/commerce",
   "openGraph": {
-    "title": "ACME Storefront | Powered by Next.js Commerce",
+    "title": "DeCent Clothing Co Storefront | Powered by Next.js Commerce",
     "description": "Next.js Commerce - https://www.nextjs.org/commerce",
     "type": "website",
     "locale": "en_IE",

@@ -26,11 +26,13 @@ const getAllProducts = async (options: {
     getAllProductsQuery,
     { variables }
   )
+  console.log('all products data: ', data)
 
   const products =
-    data.products?.edges?.map(({ node: p }: ProductEdge) =>
-      normalizeProduct(p)
-    ) ?? []
+    data.products?.edges?.map(({ node: p }: ProductEdge) => {
+      console.log('p: ', p)
+      return normalizeProduct(p)
+    }) ?? []
 
   return {
     products,
